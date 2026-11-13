@@ -33,7 +33,7 @@ function getJSON(path) {
     });
     await new Promise(r => ws.once('open', r));
     await send('Page.enable');
-    await send('Page.navigate', { url: 'https://github.com/caiguofei-ops/keylozin/actions' });
+    await send('Page.navigate', { url: 'https://github.com/Vanquisher2026/keylozin/actions' });
     await new Promise(r => setTimeout(r, 4000));
     const { result } = await send('Runtime.evaluate', { expression: 'document.body.innerText.substring(0, 3000)', returnByValue: true });
     console.log('--- Page ---');
