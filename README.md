@@ -1,22 +1,13 @@
 # KEYLOZIN - Family Matching Apparel Store
-
-> ### ⚡ 速查卡（2026-11-12）
+> ### ⚡ 速查卡（2026-11-14 更新）
 >
 > | | |
 > |---|---|
-> | **域名** | `keylozin.com` + `www` |
-> | **托管** | Cloudflare Pages（`pages_build_output_dir = ".next"`） |
-> | **部署** | GitHub Actions `.github/workflows/deploy.yml` → `npm ci` → `npm run build` → wrangler v3 |
-> | **仓库** | ⚠️ **`github.com/caiguofei-ops/keylozin`**（**不同 GitHub 账号**，非 Vanquisher2026） |
-> | **最近提交** | **2026-06-28**（已 4.5 个月未动） |
-> | **Cloudflare 账号** | ⚠️ **不在当前 CF 账号**（`654a98d7bc` 下只有 fenix / ym-proxy / czevip 三个 Pages 项目）→ 本站属于**另一套 CF 账号** |
->
-> **⚠️ 本站部署需要 GitHub Secrets `CLOUDFLARE_API_TOKEN` + `CLOUDFLARE_ACCOUNT_ID`，属于另一套账号凭证，不在 `D:\Claw\ru-medical\ops\cdp\cf.env` 里。**
->
-> **总控台（4 个站全貌）→ `D:\Claw\docs\网站总控台.md`**
->
-> **待你决定**：本站归属与主营站不同（不同 GitHub + 不同 CF 账号），是否仍算在你的站点清单里？
-
+> | **域名** | `keylozin.com` + `www`（DNS zone 在自己 CF 账号） |
+> | **仓库** | ✅ `github.com/Vanquisher2026/keylozin`（**master 分支**，已脱离旧账号） |
+> | **托管** | Cloudflare Pages（自己账号 git 集成，参考 fenix 模式） |
+> | **构建** | `npm run build`（Next.js 14；PayPal API 未配置时自动 demo 模式） |
+> | **本地代码** | `D:////sites////keylozin/**
 ---
 
 A modern e-commerce website for KEYLOZIN, a family-themed apparel brand specializing in matching outfits for fathers, couples, siblings, and families.
