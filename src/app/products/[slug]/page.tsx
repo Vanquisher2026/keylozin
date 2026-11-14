@@ -189,3 +189,8 @@ export default function ProductDetailPage() {
     </div>
   );
 }
+
+// 静态导出：预生成全部产品页（与站内 products 列表一致）
+export function generateStaticParams() {
+  return products.map((p) => ({ slug: p.slug }));
+}
