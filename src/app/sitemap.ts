@@ -3,6 +3,8 @@ import { products } from '../lib/products';
 
 const BASE_URL = 'https://keylozin.com';
 
+export const dynamic = 'force-static';
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const productPages = products.map((product) => ({
     url: `${BASE_URL}/products/${product.slug}`,
